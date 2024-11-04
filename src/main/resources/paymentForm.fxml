@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="780.0" prefWidth="1434.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.PaymentFormController">
+   <children>
+      <Label layoutX="549.0" layoutY="48.0" text="Payment Manage ">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="276.0" text="payment Id">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="paymentId" layoutX="73.0" layoutY="336.0" prefHeight="42.0" prefWidth="237.0" />
+      <Label layoutX="73.0" layoutY="428.0" text="Amount ">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amount" layoutX="73.0" layoutY="478.0" prefHeight="44.0" prefWidth="237.0" />
+      <TableView fx:id="tblpayment" layoutX="419.0" layoutY="198.0" prefHeight="356.0" prefWidth="913.0">
+        <columns>
+          <TableColumn fx:id="payid" prefWidth="205.0" text="Payment ID " />
+          <TableColumn fx:id="fullamount" prefWidth="231.0" text="Full Amount " />
+            <TableColumn fx:id="advanced" prefWidth="247.0" text="Advanced Paid " />
+            <TableColumn fx:id="havetopay" prefWidth="245.0" text="Have to Pay " />
+        </columns>
+      </TableView>
+      <Button layoutX="623.0" layoutY="618.0" mnemonicParsing="false" onAction="#btnsaveonpayment" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #8080ff;" text="Add Payment">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="895.0" layoutY="623.0" mnemonicParsing="false" onAction="#btnremovepayment" prefHeight="50.0" prefWidth="206.0" style="-fx-background-color: #2eb82e;" text="Remove Payment">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="backbtn" layoutX="1168.0" layoutY="118.0" mnemonicParsing="false" onAction="#btnback" prefHeight="50.0" prefWidth="137.0" style="-fx-background-color: #bf40bf;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

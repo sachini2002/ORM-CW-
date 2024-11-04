@@ -1,0 +1,54 @@
+#slidePane {
+    -fx-background-color: linear-gradient(to bottom, #ff8000, #ff8000); /* Example background color */
+    -fx-padding: 10px;               /* Padding around content */
+    -fx-border-color: #ffffff;       /* Border color */
+    -fx-border-width: 2px;           /* Border width */
+    -fx-border-radius: 5px;          /* Border radius */
+    -fx-background-radius: 5px;      /* Rounded corners */
+}
+
+/* style.css */
+#CourseCountPane {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-color: #ff8000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+#StudentCountPane{
+    -fx-background-color: #ff8000;
+    -fx-padding: 10px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#UserCountPane{
+    -fx-background-color: #ff8000;
+    -fx-padding: 10px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#MainPain{
+    -fx-background-color: linear-gradient(to bottom, #ffbf80, #ffffff); /* Light blue gradient */
+    -fx-padding: 10px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#studenclickpane{
+    -fx-background-color: white;
+}
+#userclickpane{
+    -fx-background-color: white;
+}
+#courseclickpane{
+    -fx-background-color: white;
+}

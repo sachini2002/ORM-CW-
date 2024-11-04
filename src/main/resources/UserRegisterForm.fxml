@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="780.0" prefWidth="1434.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserRegisterController">
+   <children>
+      <Label layoutX="607.0" layoutY="49.0" text="User Manage">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="210.0" text="User Name ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="93.0" layoutY="262.0" prefHeight="46.0" prefWidth="319.0" />
+      <Label layoutX="90.0" layoutY="340.0" text="Password">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="password" layoutX="92.0" layoutY="400.0" prefHeight="50.0" prefWidth="309.0" />
+      <Label layoutX="91.0" layoutY="485.0" text="Role">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbluser" layoutX="465.0" layoutY="220.0" prefHeight="353.0" prefWidth="837.0">
+        <columns>
+          <TableColumn fx:id="colusername" prefWidth="297.0" text="User Name " />
+          <TableColumn fx:id="colpass" prefWidth="312.0" text="Password" />
+            <TableColumn fx:id="colrole" prefWidth="227.0" text="role" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmbrole" layoutX="92.0" layoutY="546.0" prefHeight="44.0" prefWidth="306.0" />
+      <Button layoutX="495.0" layoutY="611.0" mnemonicParsing="false" onAction="#saveaction" prefHeight="45.0" prefWidth="123.0" style="-fx-background-color: green;" text="save" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="641.0" layoutY="614.0" mnemonicParsing="false" onAction="#deleteaction" prefHeight="43.0" prefWidth="123.0" style="-fx-background-color: blue;" text="delete" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="783.0" layoutY="617.0" mnemonicParsing="false" onAction="#updateaction" prefHeight="41.0" prefWidth="123.0" style="-fx-background-color: red;" text="update" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="926.0" layoutY="617.0" mnemonicParsing="false" onAction="#searchaction" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #00ffff;" text="search" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="1065.0" layoutY="614.0" mnemonicParsing="false" onAction="#clearaction" prefHeight="43.0" prefWidth="123.0" style="-fx-background-color: #ffdd99;" text="clear" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnback" layoutX="1171.0" layoutY="129.0" mnemonicParsing="false" onAction="#btnbackonaction" prefHeight="45.0" prefWidth="123.0" style="-fx-background-color: #bf40bf;" text="back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

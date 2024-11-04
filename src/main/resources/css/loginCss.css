@@ -1,0 +1,11 @@
+.Ancho{
+    -fx-background-color: black;
+}
+
+#cmbAdmin {
+    -fx-background-color: white;
+    -fx-text-fill: white;
+}
+#ChildPane{
+    -fx-background-color: #ff8000;
+}

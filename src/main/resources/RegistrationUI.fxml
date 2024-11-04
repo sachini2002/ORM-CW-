@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="780.0" prefWidth="1434.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.RegistrationController">
+   <children>
+      <Label layoutX="69.0" layoutY="141.0" text="Registration ID">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="41.0" text="Registration Manage">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="registrationid" layoutX="68.0" layoutY="175.0" prefHeight="38.0" prefWidth="283.0" />
+      <Label layoutX="68.0" layoutY="232.0" text="Advanced payment">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="payment" layoutX="66.0" layoutY="262.0" prefHeight="38.0" prefWidth="283.0" />
+      <Label layoutX="67.0" layoutY="322.0" text="registration Date">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datapicker" layoutX="71.0" layoutY="353.0" prefHeight="38.0" prefWidth="276.0" />
+      <Label layoutX="70.0" layoutY="413.0" text="Course ID">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbcourseid" layoutX="70.0" layoutY="450.0" prefHeight="36.0" prefWidth="283.0" />
+      <Label layoutX="73.0" layoutY="509.0" prefHeight="26.0" prefWidth="143.0" text="Student ID">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbstudentid" layoutX="74.0" layoutY="545.0" prefHeight="40.0" prefWidth="283.0" />
+      <TableView fx:id="tblregistration" layoutX="426.0" layoutY="200.0" prefHeight="379.0" prefWidth="863.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="99.0" text="id" />
+          <TableColumn fx:id="coladvanced" prefWidth="139.0" text="advanced" />
+            <TableColumn fx:id="coldate" prefWidth="158.0" text="date" />
+            <TableColumn fx:id="colcourseid" prefWidth="149.0" text="course id " />
+            <TableColumn fx:id="colstudent" prefWidth="161.0" text="student id" />
+            <TableColumn fx:id="paymentId" prefWidth="154.0" text="PaymentId" />
+        </columns>
+      </TableView>
+      <Button layoutX="456.0" layoutY="602.0" mnemonicParsing="false" onAction="#btnsaveaction" prefHeight="55.0" prefWidth="126.0" style="-fx-background-color: green;" text="save" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="610.0" layoutY="601.0" mnemonicParsing="false" onAction="#updateonaction" prefHeight="55.0" prefWidth="126.0" style="-fx-background-color: blue;" text="update" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="767.0" layoutY="601.0" mnemonicParsing="false" onAction="#deleteaction" prefHeight="55.0" prefWidth="126.0" style="-fx-background-color: red;" text="delete" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="921.0" layoutY="600.0" mnemonicParsing="false" onAction="#searchaction" prefHeight="55.0" prefWidth="126.0" style="-fx-background-color: #00ffff;" text="search" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="1076.0" layoutY="600.0" mnemonicParsing="false" onAction="#clearaction" prefHeight="55.0" prefWidth="126.0" style="-fx-background-color: #ffdd99;" text="clear" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnback" layoutX="1137.0" layoutY="115.0" mnemonicParsing="false" onAction="#btnbackonaction" prefHeight="55.0" prefWidth="126.0" style="-fx-background-color: #bf40bf;" text="back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="75.0" layoutY="604.0" prefHeight="26.0" prefWidth="143.0" text="Payment ID">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbPaymentID" layoutX="75.0" layoutY="638.0" prefHeight="42.0" prefWidth="290.0" />
+   </children>
+</AnchorPane>

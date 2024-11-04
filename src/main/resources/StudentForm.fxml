@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="780.0" prefWidth="1434.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.StudetnFormController">
+   <children>
+      <AnchorPane layoutX="56.0" layoutY="171.0" prefHeight="485.0" prefWidth="409.0" style="-fx-background-color: #ffdd99;">
+         <children>
+            <Label layoutX="23.0" layoutY="26.0" text="Student Id" />
+            <TextField fx:id="studentId" layoutX="23.0" layoutY="60.0" prefHeight="29.0" prefWidth="263.0" />
+            <Label layoutX="23.0" layoutY="108.0" text="Name" />
+            <TextField fx:id="studentName" layoutX="23.0" layoutY="135.0" prefHeight="29.0" prefWidth="262.0" />
+            <Label layoutX="29.0" layoutY="190.0" text="Address" />
+            <TextField fx:id="address" layoutX="23.0" layoutY="219.0" prefHeight="29.0" prefWidth="262.0" />
+            <Label layoutX="29.0" layoutY="266.0" text="contact" />
+            <TextField fx:id="contact" layoutX="23.0" layoutY="291.0" prefHeight="29.0" prefWidth="258.0" />
+            <Label layoutX="23.0" layoutY="330.0" text="Email" />
+            <TextField fx:id="Email" layoutX="23.0" layoutY="359.0" prefHeight="29.0" prefWidth="256.0" />
+            <Label layoutX="23.0" layoutY="398.0" text="Cordinator id" />
+            <ComboBox fx:id="cmbCoId" layoutX="23.0" layoutY="428.0" prefHeight="29.0" prefWidth="254.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="512.0" layoutY="44.0" text="Student Manage">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font></Label>
+      <Button layoutX="605.0" layoutY="596.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="39.0" prefWidth="93.0" style="-fx-background-color: green;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="722.0" layoutY="599.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: blue;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="850.0" layoutY="599.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="976.0" layoutY="598.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: #00ffff;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="1102.0" layoutY="597.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: #ffdd99;" text="Clear" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnback" layoutX="1186.0" layoutY="127.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="51.0" prefWidth="109.0" style="-fx-background-color: #bf40bf;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TableView fx:id="tblStudent" layoutX="585.0" layoutY="213.0" prefHeight="338.0" prefWidth="717.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="colName" prefWidth="109.0" text="name" />
+            <TableColumn fx:id="coladdress" prefWidth="131.0" text="address" />
+            <TableColumn fx:id="colcontact" prefWidth="113.0" text="contact" />
+            <TableColumn fx:id="colemail" prefWidth="165.0" text="email" />
+            <TableColumn fx:id="corid" prefWidth="123.0" text="corid" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
