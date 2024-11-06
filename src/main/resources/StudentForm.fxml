@@ -55,14 +55,14 @@
          <font>
             <Font size="18.0" />
          </font></Button>
-      <TableView fx:id="tblStudent" layoutX="585.0" layoutY="213.0" prefHeight="338.0" prefWidth="717.0">
+      <TableView fx:id="tblStudent" layoutX="559.0" layoutY="213.0" prefHeight="338.0" prefWidth="717.0">
         <columns>
           <TableColumn fx:id="colid" prefWidth="75.0" text="id" />
           <TableColumn fx:id="colName" prefWidth="109.0" text="name" />
-            <TableColumn fx:id="coladdress" prefWidth="131.0" text="address" />
+            <TableColumn fx:id="coladdress" prefWidth="117.0" text="address" />
             <TableColumn fx:id="colcontact" prefWidth="113.0" text="contact" />
-            <TableColumn fx:id="colemail" prefWidth="165.0" text="email" />
-            <TableColumn fx:id="corid" prefWidth="123.0" text="corid" />
+            <TableColumn fx:id="colemail" prefWidth="223.0" text="email" />
+            <TableColumn fx:id="corid" prefWidth="79.0" text="corid" />
         </columns>
       </TableView>
    </children>

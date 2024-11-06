@@ -14,6 +14,7 @@ import lk.ijse.bo.BoTypes;
 import lk.ijse.bo.UserBo;
 import lk.ijse.dto.UserDTO;
 import lk.ijse.dto.tm.UserTm;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.io.IOException;
 import java.net.URL;
@@ -47,6 +48,8 @@ public class UserRegisterController implements Initializable {
     @FXML
     private TextField username;
 
+    private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+
     UserBo userBo = (UserBo) BoFactory.getBoFactory().getBo(BoTypes.User);
 
     @FXML
@@ -78,9 +81,10 @@ public class UserRegisterController implements Initializable {
     void saveaction(ActionEvent event) {
         String username = this.username.getText();
         String password = this.password.getText();
-        cmbrole.setValue("Coordinator");
+        String encryptedPassword = passwordEncoder.encode(password);
+        String role = cmbrole.getValue();
 
-        UserDTO coordinator = new UserDTO(username, password, "Coordinator");
+        UserDTO coordinator = new UserDTO(username, encryptedPassword, role);
 
         // Attempt to save the user
         boolean isSaved = userBo.saveUsers(coordinator);
@@ -126,9 +130,10 @@ public class UserRegisterController implements Initializable {
     void updateaction(ActionEvent event) {
         String username = this.username.getText();
         String password = this.password.getText();
+        String encryptedPassword = passwordEncoder.encode(password);
         cmbrole.setValue("Coordinator");
 
-        UserDTO coordinator = new UserDTO(username, password, "Coordinator");
+        UserDTO coordinator = new UserDTO(username, encryptedPassword, "Coordinator");
 
         // Attempt to update the user
         boolean isUpdated = userBo.updateUser(coordinator);
@@ -145,7 +150,7 @@ public class UserRegisterController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        cmbrole.getItems().addAll("Coordinator");
+        cmbrole.getItems().addAll("Coordinator" ,"Admin");
         loadUsers();
         setCellValueFactory();
     }
@@ -154,7 +159,7 @@ public class UserRegisterController implements Initializable {
         tbluser.getItems().clear();
         List<UserDTO> userDTOS = userBo.loadTable();
         for (UserDTO userDTO : userDTOS) {
-            UserTm userTm = new UserTm(userDTO.getUsername(), userDTO.getPassword(), userDTO.getRole());
+            UserTm userTm = new UserTm(userDTO.getUsername(), "*******", userDTO.getRole());
             tbluser.getItems().add(userTm);
         }
     }

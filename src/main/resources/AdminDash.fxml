@@ -9,19 +9,34 @@
 
 <AnchorPane fx:id="MainPain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1434.0" stylesheets="@css/dash.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AdminDashController">
    <children>
-      <AnchorPane fx:id="slidePane" layoutX="24.0" layoutY="31.0" prefHeight="644.0" prefWidth="246.0" stylesheets="@css/dash.css">
+      <AnchorPane fx:id="slidePane" layoutX="24.0" layoutY="31.0" prefHeight="644.0" prefWidth="246.0" style="-fx-background-color: #901f1f;" stylesheets="@css/dash.css">
          <children>
-            <Button fx:id="stbtn" layoutX="46.0" layoutY="217.0" mnemonicParsing="false" onAction="#StudentOnClick" prefHeight="38.0" prefWidth="147.0" text="Student" />
-            <Button fx:id="coursebtn" layoutX="44.0" layoutY="287.0" mnemonicParsing="false" onAction="#coursesOnClick" prefHeight="35.0" prefWidth="147.0" text="Courses" />
-            <Button fx:id="registrationbtn" layoutX="44.0" layoutY="359.0" mnemonicParsing="false" onAction="#registrationOnClick" prefHeight="35.0" prefWidth="147.0" text="Registrations" />
-            <Button fx:id="userbtn" layoutX="44.0" layoutY="430.0" mnemonicParsing="false" onAction="#usersOnClick" prefHeight="35.0" prefWidth="147.0" text="Users" />
+            <Button fx:id="stbtn" layoutX="46.0" layoutY="217.0" mnemonicParsing="false" onAction="#StudentOnClick" prefHeight="38.0" prefWidth="147.0" style="-fx-background-color: #ff9900;" text="Student">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="coursebtn" layoutX="44.0" layoutY="287.0" mnemonicParsing="false" onAction="#coursesOnClick" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #ff9900;" text="Courses">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="registrationbtn" layoutX="44.0" layoutY="359.0" mnemonicParsing="false" onAction="#registrationOnClick" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #ff9900;" text="Registrations">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Button fx:id="userbtn" layoutX="44.0" layoutY="430.0" mnemonicParsing="false" onAction="#usersOnClick" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #ff9900;" text="Users">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
             <Button fx:id="logout" layoutX="79.0" layoutY="567.0" mnemonicParsing="false" onAction="#logoutOnClick" prefHeight="47.0" prefWidth="53.0" />
             <ImageView fitHeight="21.0" fitWidth="27.0" layoutX="94.0" layoutY="581.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/icons8-logout-64.png" />
                </image>
             </ImageView>
-            <Button fx:id="paymentbtn" layoutX="43.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnpaymentclick" prefHeight="35.0" prefWidth="147.0" text="Payment" />
+            <Button fx:id="paymentbtn" layoutX="43.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnpaymentclick" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #ff9900;" text="Payment">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
             <ImageView fitHeight="88.0" fitWidth="169.0" layoutX="7.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/istockphoto-2177661013-612x612-removebg-preview.png" />
@@ -29,10 +44,41 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="StudentCountPane" layoutX="622.0" layoutY="187.0" prefHeight="164.0" prefWidth="338.0" stylesheets="@css/dash.css" />
-      <AnchorPane fx:id="CourseCountPane" layoutX="1006.0" layoutY="293.0" prefHeight="164.0" prefWidth="338.0" stylesheets="@css/dash.css" />
-      <AnchorPane fx:id="UserCountPane" layoutX="838.0" layoutY="504.0" prefHeight="164.0" prefWidth="338.0" stylesheets="@css/dash.css" />
-      <Label contentDisplay="CENTER" layoutX="455.0" layoutY="44.0" text="Admin Dashboard" textFill="WHITE">
+      <AnchorPane fx:id="StudentCountPane" layoutX="622.0" layoutY="187.0" prefHeight="187.0" prefWidth="338.0" stylesheets="@css/dash.css">
+         <children>
+            <ImageView fitHeight="126.0" fitWidth="154.0" layoutX="71.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/istockphoto-2112502336-612x612-removebg-preview%20(1).png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="CourseCountPane" layoutX="1006.0" layoutY="268.0" prefHeight="202.0" prefWidth="338.0" stylesheets="@css/dash.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="61.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/240_F_808298426_ogKxYDVciVyL9yqMWV2BlF8rfihfFtk1-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="67.0" layoutY="153.0" text="Course Count : 150" textFill="#dd4527f2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="UserCountPane" layoutX="838.0" layoutY="494.0" prefHeight="187.0" prefWidth="338.0" stylesheets="@css/dash.css">
+         <children>
+            <ImageView fitHeight="115.0" fitWidth="150.0" layoutX="56.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/istockphoto-823553676-612x612-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="25.0" layoutY="132.0" text="Coordinator Count : 15" textFill="#fffffff2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label contentDisplay="CENTER" layoutX="452.0" layoutY="44.0" text="Admin Dashboard">
          <font>
             <Font name="System Bold" size="64.0" />
          </font>
@@ -52,5 +98,10 @@
             <Image url="@images/istockphoto-2177661529-612x612-removebg-preview.png" />
          </image>
       </ImageView>
+      <Label layoutX="686.0" layoutY="322.0" text="Student Count : 150" textFill="#fffffff2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -12,11 +12,11 @@
 
 <AnchorPane fx:id="Anchor" prefHeight="780.0" prefWidth="1434.0" stylesheets="@css/loginCss.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
    <children>
-      <AnchorPane fx:id="ChildPane" layoutX="24.0" layoutY="44.0" prefHeight="588.0" prefWidth="486.0" style="-fx-background-radius: 10px;" stylesheets="@css/loginCss.css">
+      <AnchorPane fx:id="ChildPane" layoutX="72.0" layoutY="76.0" prefHeight="604.0" prefWidth="570.0" style="-fx-background-radius: 10px;" stylesheets="@css/loginCss.css">
          <children>
-            <Label contentDisplay="TEXT_ONLY" layoutX="39.0" layoutY="59.0" text="THE CULINARY ACEDEMY SYSTEM">
+            <Label contentDisplay="TEXT_ONLY" layoutX="60.0" layoutY="59.0" text="THE CULINARY ACEDEMY SYSTEM">
                <font>
-                  <Font size="24.0" />
+                  <Font name="System Bold" size="24.0" />
                </font>
             </Label>
             <Label layoutX="117.0" layoutY="155.0" text="Login Panel" textFill="WHITE">
@@ -33,12 +33,12 @@
                </font></Button>
          </children>
       </AnchorPane>
-      <ImageView fitHeight="376.0" fitWidth="686.0" layoutX="747.0" layoutY="406.0" pickOnBounds="true">
+      <ImageView fitHeight="354.0" fitWidth="640.0" layoutX="678.0" layoutY="327.0" pickOnBounds="true">
          <image>
             <Image url="@images/istockphoto-648389838-612x612.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="411.0" fitWidth="690.0" layoutX="744.0" pickOnBounds="true">
+      <ImageView fitHeight="346.0" fitWidth="638.0" layoutX="679.0" layoutY="80.0" pickOnBounds="true">
          <image>
             <Image url="@images/istockphoto-1226267449-612x612.jpg" />
          </image>

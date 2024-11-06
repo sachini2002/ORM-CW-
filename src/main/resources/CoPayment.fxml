@@ -5,9 +5,10 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="780.0" prefWidth="1434.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.CoPaymentController">
    <children>
@@ -53,6 +54,11 @@
                   <Font size="18.0" />
                </font>
             </Button>
+            <ImageView fitHeight="225.0" fitWidth="402.0" layoutX="58.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Pictures/istockphoto-2026302367-612x612.jpg" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>
